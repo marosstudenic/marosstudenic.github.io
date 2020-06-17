@@ -1,0 +1,118 @@
+.main-block {
+    width:100%;
+    background-color: #2a4d75;
+    height:600px;
+    background-color: #000000 !important;
+    background-image: url('../img/rado.png'); opacity: 0.9;
+    background-size: cover;
+    background-position-x: center;
+    z-index:1;
+    box-shadow: 0 10px 8px 0 rgba(224, 44, 44, 0.2)
+}
+
+.post-content {
+    padding-left:50px;
+    padding-right:50px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1002;
+    text-align: center;
+}
+
+.entry-header{
+    margin:0;
+    padding:0;
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 30px;
+
+
+}
+h1 {
+    font-size: 3em;
+    font-weight:700;
+    font-family: 'Noto Sans HK', sans-serif;
+    line-height: 1.5em;
+}
+h1,h2 {
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+}
+.entry-header h1 a{
+    font-size:2em;
+    line-height: 70px;
+}
+.entry-header h2 {
+    font-size: 20px !important;
+    font-weight: 400;
+    font-family:'inconsolata' , monospace;
+    color: rgba(255,255,255,.8);
+    
+}
+
+
+
+.post-content a {
+    display:block;
+    color:white;
+}
+
+.subblock .avatar {
+    height: 200px;
+    width:200px;
+    border-radius:50%;
+    background-size: cover;
+    background-position-x: center;
+    margin: 0 auto;
+}
+
+.subblock {
+    padding-top:30px;
+    padding-bottom:20px;
+    display: flex;
+    width:100%;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    
+}
+
+
+
+.quote {
+   
+    flex: 3;
+    color:lightsalmon;
+    font-weight:400;
+    font-size:1.25em;
+    font-family: 'Odibee Sans', cursive;
+}
+.author {
+    
+    flex:2;
+}
+
+.quote p{
+    width:100%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1002;
+    font-size:2em;
+    padding: 0 20px 0 20px;
+}
+.quote .left{
+    text-align: right;
+}
+
+.quote .right {
+    text-align: left;
+}
+
+/* ludia  */
+
+.vlad {
+    background-image: url('../img/nenasilnyvlado.png');
+}
