@@ -1,0 +1,53 @@
+@import "./variables";
+@import "./circle-img";
+@import "./nav-link";
+@import "./list";
+@import "./mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap");
+
+/*
+
+variables, 
+vnaranie 
+importy
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP";
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: $lightGreen;
+  @include flexCenter(column);
+}
+
+header {
+  padding-top: 20px;
+  @include flexCenter(column);
+  h1 {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    color: $white;
+
+    margin-top: 10px;
+  }
+  h2 {
+    color: $grey;
+    #changing {
+      border-right: $grey 0.2rem solid;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}

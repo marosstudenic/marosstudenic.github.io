@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap");
+.circle-img, .circle-img-square {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.circle-img-square {
+  border-radius: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  direction: column;
+  align-items: center;
+}
+.nav-link p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.nav-link ion-icon {
+  color: white;
+}
+.nav-link__projects {
+  justify-content: flex-end;
+}
+.nav-link__socials {
+  justify-content: flex-start;
+  display: none;
+}
+
+.list {
+  width: 450px;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .list {
+    width: 350px;
+  }
+}
+.list__item {
+  border-radius: 5px;
+  background-color: #2c3a47;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  height: 80px;
+  margin: 15px 5px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.list__item:hover {
+  transform: translate3d(0, -5px, 0);
+}
+.list__item .badgeBackground {
+  background-color: #eab543;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60px;
+}
+.list__item .badgeBackground img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.list__item .links {
+  margin: 0 20px;
+  font-size: 1.2em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list__item .links p {
+  color: #58b19f;
+  font-size: 0.65em;
+}
+
+.projects {
+  display: none;
+}
+.projects .list__item {
+  margin: 15px 5px;
+  height: 170px;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+.projects .list__item .upper-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .list__item .upper-part img {
+  max-height: 50px;
+}
+.projects .list__item .upper-part .code {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .list__item .upper-part .code a {
+  color: #58b19f;
+}
+.projects .list__item .upper-part .website-only {
+  justify-content: flex-end;
+}
+.projects .list__item .project-names {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.projects .list__item .project-names h2 {
+  color: white;
+}
+.projects .list__item .project-names p {
+  color: #eab543;
+  font-size: 0.9rem;
+  display: none;
+}
+
+/*
+
+variables, 
+vnaranie 
+importy
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP";
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #58b19f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 10px;
+}
+header h2 {
+  color: #2c3a47;
+}
+header h2 #changing {
+  border-right: #2c3a47 0.2rem solid;
+  background-color: rgba(0, 0, 0, 0);
+}/*# sourceMappingURL=style.css.map */

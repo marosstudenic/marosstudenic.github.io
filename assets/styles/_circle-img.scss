@@ -1,0 +1,15 @@
+@import './variables';
+
+.circle-img {
+    height: $square;
+    width:$square;
+    object-fit: cover;
+    border-radius: 50%;;
+}
+
+
+.circle-img-square {
+    @extend .circle-img;
+    border-radius: 0;
+    
+}

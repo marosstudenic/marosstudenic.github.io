@@ -1,80 +1,168 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
-    <!-- header -->
-    <div class="top-banner">
-      <p class="banner-title">Viac obsahu je na ceste. <br>
-      Nevieš sa dočkať ? <br><br>Objednaj si pizzu</p>
+    <header>
+      <img src="square-profile.png" alt="avatar picture" class="circle-img" />
+      <h1>@maros_._._</h1>
+
+      <h2>
+        Lets use
+        <span
+          id="changing"
+          data-wait="1000"
+          data-words='["React", "Node.js", "express", "mongoDB", "Python", "Sass", "JS"]'
+        ></span>
+      </h2>
+    </header>
+    <div class="nav-link nav-link__projects" onclick="navigateToProjects()">
+      <p>Projects</p>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
     </div>
-    
 
-    <!-- Body -->
+    <div class="nav-link nav-link__socials" onclick="navigateToSocials()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      <p>Socials</p>
+    </div>
 
-    <!-- <section class="section section--plain section--straight section--top">
-        <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
-            <ul class="orbit-container">
-              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-              <li class="is-active orbit-slide">
-                <div class="docs-example-orbit-slide">
-                  <div class="quo">
-                      <strong><p>Toto je text citatu oy yeah</p></strong>
-                    <p>Autor Anca=</p>
-                  </div>
-                    
-                </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                    <p><strong>This is dodgerblue Lorem ipsum dolor sit amet,.</strong> Lorem ipsum </p>
-                  </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                    <p><strong>This is dodgerblue Lorem ipsum dolor sit amet,.</strong> Lorem ipsum </p>
-                  </div>
-              </li>
-              <li class="orbit-slide">
-                <div class="docs-example-orbit-slide">
-                    <p><strong>This is dodgerblue Lorem ipsum dolor sit amet,.</strong> Lorem ipsum </p>
-                  </div>
-              </li>
-            </ul>
-           
+    <div class="list">
+      <div class="social">
+        <a
+          class="list__item"
+          href="https://github.com/marosstudenic"
+          target="_blank"
+        >
+          <div class="badgeBackground">
+            <img src="./assets/icons/github.svg" alt="github" />
           </div>
-    </section> -->
-    
-    <!-- <section class="section section--plain  section--top section--straight">
-      <div class="quo">
-          <strong><p>Toto je text citatu oy yeah</p></strong>
-          <p>~ ondrej</p>
+          <div class="links">
+            <span>Github</span>
+            <p>github.com/marosstudenic</p>
+          </div>
+        </a>
+
+        <a
+          class="list__item"
+          href="https://www.linkedin.com/in/maros-studenic/"
+          target="_blank"
+        >
+          <div class="badgeBackground">
+            <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+          </div>
+          <div class="links">
+            <span>Linkedin</span>
+            <p>linkedin.com/in/maros-studenic/</p>
+          </div>
+        </a>
+
+        <a
+          class="list__item"
+          href="https://www.instagram.com/maros_._._/"
+          target="_blank"
+        >
+          <div class="badgeBackground">
+            <img src="./assets/icons/instagram.svg" alt="intagram" />
+          </div>
+          <div class="links">
+            <span>Instagram</span>
+            <p>instagram.com/maros_._._/</p>
+          </div>
+        </a>
+
+        <a
+          class="list__item"
+          href="mailto:studenic.maros@gmail.com"
+          target="_blank"
+        >
+          <div class="badgeBackground">
+            <img src="./assets/icons/send.svg" alt="Email" />
+          </div>
+          <div class="links">
+            <span>Contact me</span>
+            <p>studenic.maros@gmail.com</p>
+          </div>
+        </a>
       </div>
-    </section>
 
-    <section class="section">
-        <div class="quo">
-            <strong><p>Toto je text citatu oy yeah</p></strong>
-            <p>~ mario</p>
-        </div>
-      </section>
-      <section class="section section--plain">
-          <div class="quo">
-              <strong><p>Toto je text citatu oy yeah</p></strong>
-              <p>~ Gregor</p>
+      <div class="projects">
+        <div class="list__item">
+          <div class="upper-part">
+            <img src="./assets/icons/logo-amplion.svg" alt="Amplion" />
+            <div class="code">
+              <a href="https://amplion.eu/ " target="_blank">Website</a>
+              <p>|</p>
+              <a href="https://github.com/andrejm/amplion" target="_blank"
+                >Code</a
+              >
+            </div>
           </div>
-        </section>
-    -->
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+          <div class="project-names">
+            <h2>Amplifier Festival</h2>
+            <p>Cabaret and street art festival</p>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="upper-part">
+            <img src="./assets/icons/logo-male.png" alt="Amplion" />
+            <div class="code website-only">
+              <a href="https://autoumyvaren-holic.sk/" target="_blank"
+                >Website</a
+              >
+            </div>
+          </div>
+          <div class="project-names">
+            <h2>Carwash Carbax Holíc</h2>
+            <p>Contact and product page for Carwash</p>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="upper-part">
+            <img src="./assets/icons/inicialyMAgold.png" alt="Amplion" />
+            <div class="code">
+              <a
+                href="https://augustinmartin.com/countdown.html"
+                target="_blank"
+                >Website</a
+              >
+              <p>|</p>
+              <a
+                href="https://github.com/marosstudenic/vystava-augustin"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project-names">
+            <h2>Artist`s portofio</h2>
+            <p>Augustin Martin`s porfolio and invitation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/TyperWriter.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
