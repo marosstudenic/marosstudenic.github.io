@@ -1,15 +1,18 @@
-@import './variables';
+@import "./variables";
 
 .circle-img {
-    height: $square;
-    width:$square;
-    object-fit: cover;
-    border-radius: 50%;;
+  height: $square;
+  width: $square;
+  object-fit: cover;
+  border-radius: 50%;
+
+  @media (max-width: $mobile) {
+    height: 150px;
+    width: 150px;
+  }
 }
 
-
 .circle-img-square {
-    @extend .circle-img;
-    border-radius: 0;
-    
+  @extend .circle-img;
+  border-radius: 0;
 }

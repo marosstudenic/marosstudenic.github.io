@@ -9,6 +9,10 @@
     width: 350px;
   }
 
+  @media (max-width: 350px) {
+    width: 300px;
+  }
+
   &__item {
     border-radius: 5px;
     background-color: $grey;
@@ -52,6 +56,14 @@
         color: $lightGreen;
         font-size: 0.65em;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      height: 60px;
     }
   }
 }

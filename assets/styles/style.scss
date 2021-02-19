@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  padding: 20px;
   font-family: "Noto Sans JP";
   display: flex;
   justify-content: center;
@@ -50,5 +51,14 @@ header {
       border-right: $grey 0.2rem solid;
       background-color: rgba(0, 0, 0, 0);
     }
+    @media (max-width: $mobile) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.desktop-hide {
+  @media (min-width: 1000px) {
+    display: none;
   }
 }
