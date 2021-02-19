@@ -37,6 +37,7 @@ header {
   padding-top: 20px;
   @include flexCenter(column);
   h1 {
+    font-family: sans-serif;
     font-size: 1.2em;
     letter-spacing: 0.05em;
     color: $white;
